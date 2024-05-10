@@ -69,7 +69,7 @@ class Cart:
             self.products[product] = self.products[product] - remove_count
 
     def clear(self):
-        self.products = None
+        self.products.clear()
 
     def get_total_price(self) -> float:
         total_price = 0
